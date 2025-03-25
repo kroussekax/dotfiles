@@ -13,3 +13,4 @@
 ## PREVIEW
 
 ![Alt text](preview.png)
+![Alt text](preview.mp4)
