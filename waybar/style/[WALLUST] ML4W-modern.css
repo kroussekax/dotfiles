@@ -1,0 +1,158 @@
+* {
+    font-family: 'Noto Sans', 'Font Awesome 6 Free', 'Font Awesome 6 Brands';
+    font-size: 12px;
+}
+
+window#waybar {
+    background-color: rgba(255, 0, 0, 0.0);
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
+    padding: 0 5px;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+/* you can set a style on hover for any module like this
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.focused {
+    background-color: #292929;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+*/
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#workspaces button {
+    padding: 0px 10px;
+    color: alpha(#969696, 1);
+    background-color: transparent;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-right: 3px;
+	transition: all 0.2s cubic-bezier(0,0,.2,1)
+}
+
+#workspaces button:hover {
+	color: alpha(#C8C8C8, 1);
+}
+
+#workspaces button.focused {
+	color: alpha(#FFFFFF, 1);
+	background-color: #6a329f;
+	margin-left: 3px;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-right: 3px;
+	transition: all 0.25s cubic-bezier(0,0,.2,1)
+}
+
+#workspaces button {
+	min-width: 20px;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd
+#window,
+#workspaces {
+	margin: 0 8px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+	margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+	margin-right: 0;
+}
+
+#clock {
+	padding: 0 10px;
+	background-color: #292929;
+	box-shadow: inset 0 -3px #ffffff;
+	margin: 0;
+}
+@keyframes blink {
+to {
+	background-color: #ffffff;
+	color: #000000;
+}
+}
+label:focus {
+	background-color: white;
+}
+#custom-startmenu {
+	padding-left: 10px;
+}
+#custom-startmenu:focused {
+	background-color: white;
+}
+#custom-ram {
+	font-size: 16
+}
+

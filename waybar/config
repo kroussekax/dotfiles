@@ -1,0 +1,49 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+
+// ### DEFAULT v3  - Top ### //
+{
+	"include": [
+		"$HOME/.config/waybar/Modules",
+		"$HOME/.config/waybar/ModulesWorkspaces",
+		"$HOME/.config/waybar/ModulesCustom",
+		"$HOME/.config/waybar/ModulesGroups",
+	],
+	"layer": "top",
+	//"mode": "dock",
+	"exclusive": true,
+	"passthrough": false,
+	"position": "top",
+	"spacing": 3,
+	"fixed-center": true,
+	"ipc": true,
+	"margin-top": 3,
+	"margin-left": 8,
+	"margin-right": 8,
+
+	"modules-left": [
+		"custom/menu",
+	"custom/separator#dot-line",
+	"power-profiles-daemon",
+	"group/mobo_drawer",
+	"custom/separator#dot-line",
+	"tray",
+	"custom/separator#dot-line",
+	"hyprland/window",
+	],
+
+	"modules-center": [
+		"custom/swaync",
+	"hyprland/workspaces",
+	"hyprland/submap"
+	],
+
+	"modules-right": [
+		"custom/playerctl",
+	"custom/separator#line",
+	"group/connections",
+	"pulseaudio",
+	"power-profiles-daemon",
+	"battery",
+	"clock",
+	],
+}
