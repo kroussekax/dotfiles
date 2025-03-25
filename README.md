@@ -12,6 +12,6 @@
 
 ## PREVIEW
 
-![Alt text](preview.png)
+![Picture Prev](preview.png)
 
-![Alt text](preview.mp4)
+[![Video Prev](preview.png)](preview.mp4)
