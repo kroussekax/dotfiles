@@ -10,6 +10,6 @@
 
 4. Enjoy!!
 
-## PREVIEWo
+## PREVIEW
 
 ![Alt text](preview.png)
