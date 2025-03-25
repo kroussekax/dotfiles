@@ -13,5 +13,3 @@
 ## PREVIEW
 
 ![Picture Prev](preview.png)
-
-[![Video Prev](preview.png)](preview.mp4)
