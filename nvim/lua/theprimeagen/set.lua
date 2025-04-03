@@ -27,5 +27,3 @@ vo.isfname:append("@-@")
 vo.updatetime = 50
 
 vo.colorcolumn = "120"
-
-vim.g.neovide_fullscreen = true

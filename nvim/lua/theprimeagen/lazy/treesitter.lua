@@ -6,7 +6,7 @@ return {
             -- A list of parser names, or "all"
             ensure_installed = {
                 "vimdoc", "javascript", "typescript", "c", "lua", "rust",
-                "jsdoc", "bash",
+                "jsdoc", "bash", "hyprlang"
             },
 
             -- Install parsers synchronously (only applied to `ensure_installed`)
@@ -41,6 +41,10 @@ return {
             },
         }
 
-        vim.treesitter.language.register("templ", "templ")
-    end
+		vim.treesitter.language.register("templ", "templ")
+
+		vim.filetype.add({
+			pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+		})
+	end
 }

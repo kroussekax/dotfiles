@@ -55,24 +55,19 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
-vim.keymap.set('n', '<Leader>ply', [[<Cmd>lua vim.fn.jobstart('./run.sh')<CR>]])
+vim.keymap.set("n", "<leader>ply", function()
+	vim.cmd("botright split | resize 10 | terminal ./run.sh")
+end, { noremap = true, silent = true })
+
 vim.keymap.set("n", "<leader>rply", function()
-    vim.cmd("Cargo run")
+	vim.cmd("Cargo run")
 end)
-
-vim.keymap.set("n", "<leader>=", function()
-    vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + 0.1
-end)
-
-vim.keymap.set("n", "<leader>-", function()
-    vim.g.neovide_scale_factor = vim.g.neovide_scale_factor - 0.1
-end)
-
+--
 -- Resize with >
 vim.api.nvim_set_keymap('n', '>', ':vertical resize +10<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<', ':vertical resize -10<CR>', { noremap = true, silent = true })
 
 -- Tagbar
 vim.keymap.set("n", "<leader>=", function()
-    vim.cmd("TagbarOpen")
+	vim.cmd("TagbarOpen")
 end)
